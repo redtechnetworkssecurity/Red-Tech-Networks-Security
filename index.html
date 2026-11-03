@@ -5,7 +5,7 @@
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <meta name="theme-color" content="#090a0d">
          <meta name="description" content="Red Tech Networks & Security: soporte técnico, desarrollo web y apps, recuperación de información, ciberseguridad, redes, CCTV y cableado estructurado.">
-         <link rel="Short icon" type="text/css" href="imagenes/logo2.png">
+         <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo2.png">
          <link rel="stylesheet" href="style/style.css">
          <title>Red Tech Networks & Security | Tecnología, redes y seguridad </title>
          <link rel="canonical" href="https://redtechnetworkssecurity.github.io/Red-Tech-Networks-Security/">
@@ -41,10 +41,12 @@
          <header class="topbar">
             <div class="wrap nav">
                <a class="brand" href="#inicio" aria-label="Red Tech inicio"><div class="brand-mark"><img src="imagenes/logo2.png" alt="Logo" style="width:40px;" class="rounded-pill"></div><div>RED TECH<small>NETWORKS &amp; SECURITY</small></div></a>
-               <nav class="links" id="navLinks">
+               <button class="menu" id="menuBtn" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">☰</button>
+               <nav class="links" id="navLinks" aria-label="Principal">
                   <a href="#servicios">Servicios</a>
                   <a href="#nosotros">Nosotros</a>
                   <a href="#proceso">Cómo trabajamos</a>
+                  <a href="#preguntas">Preguntas frecuentes</a>
                   <a href="#contacto">Contacto</a>
                </nav>
             </div>
@@ -70,12 +72,70 @@
                <div class="wrap">
                   <div class="section-head"><div class="eyebrow">Lo que hacemos</div><h2>Servicios tecnológicos integrales</h2><p>Un solo aliado para resolver problemas, desarrollar tus ideas y mantener tu infraestructura funcionando de forma confiable.</p></div>
                   <div class="cards">
-                     <article class="service"><div class="service-icon">⌘</div><h3>Mantenimiento correctivo y soporte técnico</h3><p>Diagnóstico, reparación, configuración y solución de problemas de equipos de cómputo y sistemas.</p><a class="more" href="#contacto">SOLICITAR SOPORTE ↗</a></article>
-                     <article class="service"><div class="service-icon">〈/〉</div><h3>Desarrollo web y de aplicaciones</h3><p>Páginas web modernas, aplicaciones y soluciones digitales adaptadas a las necesidades de tu negocio.</p><a class="more" href="#contacto">COTIZAR PROYECTO ↗</a></article>
-                     <article class="service"><div class="service-icon">▤</div><h3>Recuperación de información</h3><p>Evaluación y recuperación de archivos ante borrados accidentales, fallas lógicas y otros incidentes.</p><a class="more" href="#contacto">CONSULTAR CASO ↗</a></article>
-                     <article class="service"><div class="service-icon">⬡</div><h3>Consultoría de ciberseguridad</h3><p>Análisis de riesgos, revisión de vulnerabilidades, recomendaciones de protección y buenas prácticas.</p><a class="more" href="#contacto">PROTEGER MI NEGOCIO ↗</a></article>
-                     <article class="service"><div class="service-icon">⌁</div><h3>Instalación de equipos de red</h3><p>Instalación y configuración de routers, switches, puntos de acceso y conectividad LAN/Wi-Fi.</p><a class="more" href="#contacto">MEJORAR MI RED ↗</a></article>
-                     <article class="service"><div class="service-icon">◉</div><h3>CCTV y cableado estructurado</h3><p>Soluciones de videovigilancia, tendido y organización de cableado para una infraestructura ordenada.</p><a class="more" href="#contacto">COTIZAR INSTALACIÓN ↗</a></article>
+                     <article class="service">
+                        <div class="service-icon" aria-hidden="true">⌘</div>
+                        <h3>Mantenimiento correctivo y soporte técnico</h3>
+                        <p>Diagnóstico, reparación, configuración y solución de problemas de equipos de cómputo y sistemas.</p>
+                        <ul><li>Diagnóstico de fallas</li>
+                           <li>Instalación y configuración de sistemas</li>
+                           <li>Limpieza y optimización</li>
+                           <li>Soporte remoto y presencial</li>
+                        </ul>
+                        <span class="for">Ideal para: hogar y oficina</span>
+                        <a class="more" href="#contacto" data-servicio="Soporte técnico">SOLICITAR SOPORTE ↗</a>
+                     </article>
+                     <article class="service">
+                        <div class="service-icon">〈/〉</div>
+                        <h3>Desarrollo web y de aplicaciones</h3>
+                        <p>Páginas web modernas, aplicaciones y soluciones digitales adaptadas a las necesidades de tu negocio.</p>
+                        <ul><li>Sitios web para negocios</li>
+                           <li>Aplicaciones a la medida</li>
+                           <li>Diseño adaptable a celular</li>
+                           <li>Optimización y mantenimiento</li>
+                        </ul>
+                        <span class="for">Ideal para: negocios y emprendedores</span>
+                        <a class="more" href="#contacto" data-servicio="Desarrollo web y apps">COTIZAR PROYECTO ↗</a>
+                     </article>
+                     <article class="service">
+                        <div class="service-icon">▤</div>
+                        <h3>Recuperación de información</h3>
+                        <p>Evaluación y recuperación de archivos ante borrados accidentales, fallas lógicas y otros incidentes.</p>
+                        <ul><li>Evaluación del caso</li>
+                           <li>Recuperación de archivos</li>
+                           <li>Recomendaciones de respaldo</li>
+                        </ul>
+                        <span class="for">Ideal para: hogar y negocio</span>
+                        <a class="more" href="#contacto" data-servicio="Recuperación de información">CONSULTAR CASO ↗</a>
+                     </article>
+                     <article class="service">
+                        <div class="service-icon">⬡</div>
+                        <h3>Consultoría de ciberseguridad</h3>
+                        <p>Análisis de riesgos, revisión de vulnerabilidades, recomendaciones de protección y buenas prácticas.</p>
+                        <ul><li>Revisión de riesgos</li>
+                           <li>Buenas prácticas y políticas básicas</li>
+                           <li>Recomendaciones de protección</li></ul>
+                        <span class="for">Ideal para: pequeñas y medianas empresas</span>
+                        <a class="more" href="#contacto" data-servicio="Ciberseguridad">PROTEGER MI NEGOCIO ↗</a></article>
+                     <article class="service">
+                        <div class="service-icon">⌁</div>
+                        <h3>Instalación de equipos de red</h3>
+                        <p>Instalación y configuración de routers, switches, puntos de acceso y conectividad LAN/Wi-Fi.</p>
+                        <ul><li>Cobertura Wi-Fi</li>
+                           <li>Configuración de routers y switches</li>
+                           <li>Red LAN ordenada</li></ul>
+                        <span class="for">Ideal para: oficinas, locales y casas</span>
+                        <a class="more" href="#contacto" data-servicio="Redes">MEJORAR MI RED ↗</a>
+                     </article>
+                     <article class="service">
+                        <div class="service-icon">◉</div>
+                        <h3>CCTV y cableado estructurado</h3>
+                        <p>Soluciones de videovigilancia, tendido y organización de cableado para una infraestructura ordenada.</p>
+                        <ul><li>Cámaras de videovigilancia</li>
+                           <li>Tendido y etiquetado de cableado</li>
+                           <li>Orden de racks y gabinetes</li></ul>
+                        <span class="for">Ideal para: comercios y oficinas</span>
+                        <a class="more" href="#contacto" data-servicio="CCTV y cableado">COTIZAR INSTALACIÓN ↗</a>
+                     </article>
                   </div>
                </div>
             </section>
@@ -92,12 +152,73 @@
                   <div class="steps"><div class="step"><strong>01 / ESCUCHAR</strong><h3>Conocemos tu caso</h3><p>Revisamos el problema, tus objetivos y el entorno técnico.</p></div><div class="step"><strong>02 / PROPONER</strong><h3>Definimos el alcance</h3><p>Planteamos alternativas, tiempos estimados y cotización.</p></div><div class="step"><strong>03 / IMPLEMENTAR</strong><h3>Trabajamos en la solución</h3><p>Ejecutamos el servicio acordado y validamos su funcionamiento.</p></div><div class="step"><strong>04 / ACOMPAÑAR</strong><h3>Te orientamos</h3><p>Te explicamos el resultado y las recomendaciones de uso.</p></div></div>
                </div>
             </section>
+<!-- Sección de preguntas frecuentes -->
+            <section class="faq" id="preguntas">
+               <div class="wrap">
+                  <div class="section-head">
+                     <div class="eyebrow">Dudas comunes</div>
+                     <h2>Preguntas frecuentes</h2>
+                  </div>
+                  <div class="faq-list">
+                     <details>
+                        <summary>¿Cómo solicito una cotización?</summary>
+                        <p>Llena el formulario de contacto o escríbenos por correo describiendo qué necesitas. Revisamos tu caso y te respondemos con el alcance, los tiempos estimados y el costo.</p>
+                     </details>
+                     <details>
+                        <summary>¿Atienden a domicilio o en oficina?</summary>
+                        <p>Atendemos en Puebla, México. La modalidad (visita al sitio o revisión del equipo) se acuerda al cotizar según el servicio.</p>
+                     </details>
+                     <details>
+                        <summary>¿Pueden garantizar la recuperación de mis archivos?</summary>
+                        <p>No se puede asegurar el resultado de una recuperación sin evaluar el caso: depende del estado del equipo o del medio de almacenamiento. Primero hacemos una evaluación y te explicamos qué es posible. Mientras tanto, evita seguir usando el equipo afectado.</p>
+                     </details>
+                     <details>
+                        <summary>¿Qué necesito para cotizar CCTV o cableado?</summary>
+                        <p>Ayuda mucho saber el tipo de lugar (casa, local u oficina), cuántas áreas quieres cubrir y si ya existe cableado. Con eso definimos si hace falta una visita para medir.</p>
+                     </details>
+                     <details>
+                        <summary>¿Cuáles son las formas de pago y la garantía?</summary>
+                        <p>Las condiciones de pago y garantía de cada servicio se indican por escrito en la cotización, antes de iniciar el trabajo.</p>
+                     </details>
+                  </div>
+               </div>
+            </section>
 
             <section class="contact" id="contacto">
                <div class="wrap contact-box">
-                  <div><div class="eyebrow">Contacto</div><h2>¿Listo para mejorar tu tecnología?</h2><p>Cuéntanos qué necesitas y solicita una cotización. Podemos ayudarte a elegir el servicio adecuado para tu equipo, negocio o proyecto.</p><a class="btn btn-primary" href="mailto:contacto@redtechnetworks.com?subject=Solicitud%20de%20cotizaci%C3%B3n">Enviar correo ↗</a></div>
+                  <div>
+                     <div class="eyebrow">Contacto</div>
+                     <h2>¿Listo para mejorar tu tecnología?</h2>
+                     <p>Cuéntanos qué necesitas y solicita una cotización. Podemos ayudarte a elegir el servicio adecuado para tu equipo, negocio o proyecto.</p>
+                     <a class="btn btn-primary" href="mailto:contacto@redtechnetworks.com?subject=Solicitud%20de%20cotizaci%C3%B3n">Enviar correo ↗</a>
+                  <form class="form" id="contactForm">
+            <label>Nombre
+              <input type="text" name="nombre" required autocomplete="name" maxlength="80">
+            </label>
+            <label>Teléfono o correo
+              <input type="text" name="contacto" required autocomplete="off" maxlength="80">
+            </label>
+            <label>Servicio
+              <select name="servicio" id="servicioSel">
+                <option>Soporte técnico</option>
+                <option>Desarrollo web y apps</option>
+                <option>Recuperación de información</option>
+                <option>Ciberseguridad</option>
+                <option>Redes</option>
+                <option>CCTV y cableado</option>
+                <option>Otro</option>
+              </select>
+            </label>
+            <label>¿Qué necesitas?
+              <textarea name="mensaje" required maxlength="600"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" id="submitBtn">Enviar solicitud ↗</button>
+            <p class="form-note" id="formNote">Al enviar, se abrirá tu correo con el mensaje listo. Usamos tus datos solo para responder tu solicitud.</p>
+          </form>
+               </div>
                   <div class="contact-list">
                   <div class="contact-item"><div class="service-icon">✉</div><div><small>Correo electrónico</small><b><a href="mailto:redtechnetworkssecurity@gmail.com">redtechnetworkssecurity@gmail.com</a></b></div></div>
+                  <div class="contact-item" id="waItem" hidden><div class="service-icon" aria-hidden="true">☏</div><div><small>WhatsApp</small><b><a id="waLink" href="#" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></b></div></div>
                   <div class="contact-item"><div class="service-icon">⌖</div><div><small>Zona de atención</small><b>Puebla, México</b></div></div>
                   <div class="contact-item"><div class="service-icon">◷</div><div><small>Atención</small><b>Con cita y previa cotización</b></div></div>
                   </div>
@@ -106,10 +227,57 @@
          </main>
          <footer><div class="wrap footer-row"><div><div class="footer-brand">RED <span>TECH</span> NETWORKS &amp; SECURITY</div><div>Tu tecnología, más segura y conectada.</div></div><div class="footer-links"><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div><div>© <span id="year"></span> Red Tech. Todos los derechos reservados.</div></div></footer>
          <script>
-         const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
-         menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';});
-         navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
-         document.getElementById('year').textContent=new Date().getFullYear();
-         </script>
+    // ====== CONFIGURACIÓN ======
+    // Escribe tu número con código de país y sin signos: ejemplo México 52 + 10 dígitos
+    // Mientras esté vacío, el botón de WhatsApp no se muestra y el formulario usa el correo.
+    const WHATSAPP = "+522212478964";
+    const CORREO = "redtechnetworkssecurity@gmail.com";
+    // ===========================
+
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    function setMenu(open){
+      navLinks.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? '×' : '☰';
+    }
+    menuBtn.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Botones de servicio: preseleccionan el servicio en el formulario
+    const sel = document.getElementById('servicioSel');
+    document.querySelectorAll('[data-servicio]').forEach(a => {
+      a.addEventListener('click', () => { sel.value = a.dataset.servicio; });
+    });
+
+    // WhatsApp (solo si hay número configurado)
+    const waMsg = encodeURIComponent('Hola, me gustaría solicitar una cotización con Red Tech Networks & Security.');
+    if (WHATSAPP) {
+      const url = `https://wa.me/${WHATSAPP}?text=${waMsg}`;
+      const f = document.getElementById('waFloat');
+      f.href = url; f.classList.add('show');
+      document.getElementById('waLink').href = url;
+      document.getElementById('waItem').hidden = false;
+      document.getElementById('formNote').textContent = 'Al enviar, se abrirá WhatsApp con tu mensaje listo. Usamos tus datos solo para responder tu solicitud.';
+    }
+
+    // Formulario: arma el mensaje y lo envía por WhatsApp o correo
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const d = new FormData(e.target);
+      const texto =
+        `Hola, soy ${d.get('nombre')}.\n` +
+        `Servicio: ${d.get('servicio')}\n` +
+        `Contacto: ${d.get('contacto')}\n\n` +
+        `${d.get('mensaje')}`;
+      if (WHATSAPP) {
+        window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+      } else {
+        window.location.href = `mailto:${CORREO}?subject=${encodeURIComponent('Solicitud de cotización: ' + d.get('servicio'))}&body=${encodeURIComponent(texto)}`;
+      }
+    });
+  </script>
       </body>
    </html>
